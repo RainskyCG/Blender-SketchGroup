@@ -1,4 +1,4 @@
-# SketchGroup
+# SketchGroup · Blender 极简打组工具
 
 **双击进入群组，原位编辑，关联副本实时同步。**
 
@@ -6,7 +6,7 @@
 
 ![SketchGroup 原位编辑与关联同步](docs/images/03-edit-linked.png)
 
-[图文快速上手](docs/USER_GUIDE.zh-CN.md) · [下载](https://github.com/RainskyCG/SketchGroup/releases)
+[图文快速上手](docs/USER_GUIDE.zh-CN.md) · [下载](https://github.com/RainskyCG/Blender-SketchGroup/releases)
 
 ## 安装
 
