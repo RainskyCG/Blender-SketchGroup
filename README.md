@@ -1,41 +1,41 @@
 # SketchGroup · Blender 极简打组工具
 
-**双击进入群组，原位编辑，关联副本实时同步。**
+SketchGroup，无需快捷键即可对集合实例进行快速编辑退出的打组工具。
 
-用于 Blender 场景搭建，支持组中组、独立／关联复制、加入、分离和解散。
+## 常用
+![](docs/_assets/image-20261103-102921-ocxd07.gif)
 
-![SketchGroup 原位编辑与关联同步](docs/images/03-edit-linked.png)
+| 操作 | 快捷键 | 说明 |
+| --- | --- | --- |
+| **创建群组** | **Ctrl+G** | 将选中物体打组 |
+| **编辑组** | **双击** / **Tab** | 双击组，或选中组后按 Tab |
+| **退出组** | **单击组框外** / **Esc** / **空选 Tab** | Esc 在物体模式下退出；框外单击按位置返回上层或场景 |
+| **加入群组** | **Ctrl+J** | 将物体加入组，以活动项原点为组中心 |
+| **复制** | **Shift+D** | 独立复制当前层，嵌套子组保持原有关联 |
+| **关联复制** | **Alt+D** | 编辑任意一个，其他同源组同步变化 |
 
-[图文快速上手](docs/USER_GUIDE.zh-CN.md) · [下载](https://github.com/RainskyCG/Blender-SketchGroup/releases)
+支持组嵌套：组内继续打组、双击进入子组，点击子组框外、父组框内可返回父组。
 
-## 安装
+## 分离与解散
 
-适用于 Blender 5.0+，已验证 Windows / Blender 5.0.1；轮廓遮罩需要 OpenGL。
+组编辑中按 **P**：
 
-| 步骤 | 操作 |
+| 菜单项 | 效果 |
 | --- | --- |
-| **1 · 下载** | 下载 **SketchGroup-v1.0.0.zip**，不用解压 |
-| **2 · 安装** | Blender 偏好设置 → 扩展／插件页面右上角菜单 → **从磁盘安装** |
-| **3 · 启用** | 选择 ZIP 并启用 SketchGroup |
+| **选中项** | 将选中物体原位分离到场景 |
+| **解散** | 只展开当前层 |
+| **解散全部** | 连同嵌套子级一起展开 |
 
-## 先记住这几个操作
+场景中也可选中组，右键 → SketchGroup → 解散。只想修改某一个关联实例时，先独立化。
 
-| 操作 | 按键 |
+## 调整原点
+
+| 操作 | 方法 |
 | --- | --- |
-| 打组 | Ctrl+G |
-| 进入组 | 双击或 Tab |
-| 退出组 | Esc、空选 Tab，或单击组框外 |
-| 独立复制当前层 | Shift+D |
-| 关联复制 | Alt+D |
-| 加入组 | Ctrl+J |
-| 分离／解散 | 组编辑中按 P |
+| **开启／关闭仅影响原点** | **Ctrl+.**（Blender 默认键位） |
+| **调整中心** | 开启后用 **G / R / S**，模型保持原位；完成后关闭 |
 
-组内可以继续 Ctrl+G 打组。Shift+D 保留嵌套子组的原有关联；需要单独修改时，右键 → SketchGroup → **独立化**。
-
-完整入门步骤见[图文快速上手](docs/USER_GUIDE.zh-CN.md)。
-
-## 开源
-
-[GPL-3.0-or-later](LICENSE) · [图标来源](assets/icons/SOURCES.md) · [贡献说明](CONTRIBUTING.md) · [构建说明](docs/BUILD.md)
-
-[Rainsky](https://github.com/RainskyCG) · [ArtStation](https://www.artstation.com/rain_sky) · [bilibili](https://space.bilibili.com/26918877)
+## 偏好设置
+![SketchGroup 常规偏好设置](docs/images/preferences-general.jpg)
+可在插件设置中自定义组边界框和轮廓遮罩的粗细和颜色
+![SketchGroup 按键映射偏好设置](docs/images/preferences-keymap.jpg)
