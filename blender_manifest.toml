@@ -1,0 +1,15 @@
+schema_version = "1.0.0"
+id = "sketchgroup"
+version = "1.0.0"
+name = "SketchGroup"
+tagline = "Nested group editing for scene building"
+maintainer = "Rainsky"
+type = "add-on"
+blender_version_min = "5.0.0"
+license = ["SPDX:GPL-3.0-or-later"]
+tags = ["Object"]
+[build]
+paths_exclude_pattern = ["__pycache__/", ".git", ".git/", ".gitignore", "tests/", "test_artifacts/", "*_result.json", "fold_*.png", "*.zip", "release/", "tools/", ".github/", "ARCHITECTURE.md", "CHANGELOG.md"]
+
+
+

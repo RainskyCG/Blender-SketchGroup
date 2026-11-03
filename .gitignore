@@ -1,0 +1,10 @@
+__pycache__/
+*.py[cod]
+*.zip
+*.blend
+*.blend1
+*.blend2
+*_result.json
+test_artifacts/
+fold_*.png
+release/
